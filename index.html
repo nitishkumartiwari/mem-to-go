@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script href="script.js" ></script>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0.5px;
+           width: 100%;
+        }
+        body{
+            background-color:rgb(245, 212, 212);
+        }
+
+
+        .nitish {
+            border: 5px solid rgb(62, 41, 41);
+            height: 8vh;
+        }
+        .height1 {
+            height: 92vh;
+        }
+        .tag {
+            text-align: center;
+            margin-top: 4%;
+            margin-bottom: 2%;
+        }
+
+        .design {
+            border: 1px solid black;
+            border-radius: 3%;
+        }
+
+        .contact{
+            margin-top: 5vh;
+            width: 100%;
+            display: flex;
+            height: auto;
+           /* border: 2px solid black;*/
+        }
+        .contact_card{
+            width: 23%;
+            height: 100%;
+            margin-left: 1%;
+            margin-right: 1%;
+           /* border: 2px solid black;*/
+        }
+        .head{
+            width: 100%;
+            height: auto;
+        }
+        .footer{
+            width: 100%;
+            background-color:rgb(4, 4, 74);
+            margin-top: 10vh;
+        }
+        .border2{
+            border: 0px;
+        }
+
+        .nav text{
+            font-size: small;
+            color: sandybrown;
+        }
+        .colr{
+            background-color: rgb(44, 32, 114);
+        }
+        .c{
+            background-color:rgb(4, 4, 74);
+        }
+        .text{
+            margin-left: 10%;
+            margin-right: 10%;
+            color: white;
+            font-size: large;
+        }
+        .text1{
+           font-size: larger;
+            color:#def172;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .text2{
+            font-size: larger;
+            margin-left: 5%;
+        }
+        .copyright{
+            height: 5vh;
+            width: 100%;
+            background-color: yellow;
+        }
+        .copyright_text{
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            color: rgb(18, 18, 98);
+        }
+       .adjust{
+        width: 30%;
+       }
+       .mar{
+        width:30%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+       }
+       .tet{
+        font-size: large;
+       }
+      .tep{
+      margin-left: 3%;
+      font-size:larger;
+      font-style: italic;
+      font-weight: bold;
+}
+/*......................................*/  
+.gift img{
+    border-radius: 3%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+    width: 430px;
+    height: 380px;
+    margin-bottom: 40px;;
+}
+.gift:hover img {
+    -webkit-transform: scale(1.3);
+    background-image: url(macbook-pro-with-box-scaled.jpg);
+	transform: scale(1.12);
+    content: "hello";
+}
+
+.specials img{
+    border-radius: 3%;
+    margin-bottom: 40px;
+    height: 500px;
+    width:95%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.specials:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.12);
+    content: "hello";
+}
+.wears img{
+    border-radius: 3%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+    margin-bottom: 40px;
+}
+.wears:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.12);
+    content: "hello";
+}
+.notebooks img{
+    border-radius: 3%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+    width: 430px;
+    height: 380px;
+    margin-bottom: 40px;
+}
+.notebooks:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.12);
+    content: "hello";
+}
+/*....................*/
+
+ .hov:hover{
+    color: yellowgreen;
+    font-size: large;
+ }
+ .hove:hover{
+    color: red;
+ }
+ .hov_img:hover{
+   background-color: green;
+   color: black;
+   font-weight: bold;
+   font-style: italic;
+ }
+ .box{
+    padding: 0%;
+ }
+ .img_size1{
+    width: 100%;
+    height: 50%;
+ }
+.containeer{
+    width: 100%;
+    height:70%;
+    border: 2px solid red;
+    display: flex;
+}
+.big_box{
+    border: 2px solid black;
+    width: 48%;
+    height: 58%;
+    margin: 0.2%;
+}
+.image_box{
+    display: flex;
+}
+.image_box.a{
+    height:100%
+}
+
+    </style>
+</head>
+
+<body>
+<!-- Sticky navbar-->
+<header class="header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light colr shadow-sm">
+        <div class="container"><a class="navbar-brand" href="https://www.mematgo.com/">
+            <strong class=" pankaj h4 mb-0  font-style-italic font-weight-bold tep">Memat Go</strong></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link pankaj" href="https://www.mematgo.com/pages/customize-notebooks">Notebook <span class="sr-only"></span></a></li>
+                    <li class="nav-item"><a class="nav-link pankaj" href="https://www.mematgo.com/pages/customize-designer-t-shirts">Designer T-shirts</a></li>
+                    <li class="nav-item"><a class="nav-link pankaj" href="https://www.mematgo.com/pages/customize-mobile-cover">Mobile Cover</a></li>
+                    <li class="nav-item"><a class="nav-link pankaj" href="https://www.mematgo.com/pages/customize-jewellery">Jewellery</a></li>
+                    <li class="nav-item"><a class="nav-link pankaj" href="https://www.mematgo.com/pages/customize-products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link pankaj" href="https://www.mematgo.com/pages/customize-products">Gifts & Coupons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    </ul>
+    
+  </div>
+</nav>
+
+    <!-- As a heading -->
+   <div class="hero">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="land1.png" class="d-block w-100 height1" alt="loading...">
+            </div>
+            <div class="carousel-item">
+                <img src="land2.jpg" class="d-block w-100 height1" alt="loading...">
+            </div>
+            <div class="carousel-item">
+                <img src="land3.jpg" class="d-block w-100 height1" alt="loading...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+    <div class="tag">
+        <h2>Online Gifts Top Categories</h2>
+    </div>
+    <div class="row row-cols-2 row-cols-md-4 g-2 box">
+
+        <div class="col ">
+            <div class="gift ">
+               <a href="https://www.mematgo.com/"> <img src="kids_gift.jpg" class="card-img-top  " alt="..."></a>
+
+            </div>
+        </div>
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="macbook-pro-with-box-scaled.jpg" class="card-img-top " alt="..."></a>
+
+                
+            </div>
+        </div>
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="perfume.jfif" class="card-img-top" alt="..."></a>
+
+               
+                
+            </div>
+        </div>
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="OIP.jfif" alt="..."></a> 
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-2 row-cols-md-4 g-2 box">
+
+        <div class="col ">
+            <div class="gift">
+               <a href="https://www.mematgo.com/"> <img src="kids_gift.jpg" class="card-img-top " alt="..."></a>   
+            </div>
+        </div>
+
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="perfume.jfif" class="card-img-top" alt="..."></a>
+                </div>
+            </div>
+       
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="OIP.jfif" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="c1.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="tag">
+        <h2>T-shirts & Jeans</h2>
+    </div>
+    <div class="containeer">
+        <div class="big_box image_box">
+            <div class="small_box">
+                <a href="https://www.mematgo.com/"><img src="tee1.jpg" alt="..."></a>
+             </div>
+           
+        </div>
+        <div class="big_box image_box">
+            <div class="small_box">
+                <a href="https://www.mematgo.com/"><img src="tee2.jfif" alt="..."></a>
+             </div>
+             
+        </div>
+
+        <div class="big_box">
+            <a href="https://www.mematgo.com/"><img src="tee3.jfif" alt="..."></a>
+            
+        </div>
+
+    </div>
+   
+
+
+    <div class="containeer">
+        <div class="big_box image_box">
+            <div class="small_box">
+                <a href="https://www.mematgo.com/"><img src="tee6.jfif" alt="..."></a>
+             </div>
+           
+        </div>
+        <div class="big_box image_box">
+            <div class="small_box">
+                <a href="https://www.mematgo.com/"><img src="tee5.jfif" alt="..."></a>
+             </div>
+           
+        </div>
+        <div class="big_box image_box">
+            <div class="small_box">
+                <a href="https://www.mematgo.com/"><img src="tee6.jfif" alt="..."></a>
+             </div>
+             
+        </div>
+        <div class="big_box">
+            <a href="https://www.mematgo.com/"><img src="tee7.jpg" alt="..."></a>
+            
+        </div>
+        <div class="big_box">
+            <a href="https://www.mematgo.com/"><img src="tee5.jfif" alt="..."></a>
+            
+        </div>
+      
+    </div>
+    <div class="tag">
+        <h2>Festival Special Top Categories</h2>
+    </div>
+<!-- As a heading -->
+<div class="row row-cols-2 row-cols-md-4 g-2 box">
+
+    <div class="col ">
+        <div class="specials">
+           <a href="https://www.mematgo.com/"> <img src="fest1.jfif" class="card-img-top " alt="..."></a>
+        </div>
+    </div>
+    <div class="col ">
+        <div class="specials">
+            <a href="https://www.mematgo.com/"><img src="fest3.jfif" class="card-img-top" alt="..."></a>
+        </div>
+    </div>
+    <div class="col ">
+        <div class="specials">
+            <a href="https://www.mematgo.com/"><img src="fest2.jfif" class="card-img-top" alt="..."></a>
+        </div>
+    </div>
+    <div class="col ">
+        <div class="specials">
+            <a href="https://www.mematgo.com/"><img src="fest4.jpg" class="card-img-top" alt="..."></a>
+        </div>
+    </div>
+    </div>
+</div>
+    <!-- As a heading -->
+    <div class="row row-cols-2 row-cols-md-4 g-2  box">
+
+        <div class="col">
+            <div class="specials">
+                <a href="https://www.mematgo.com/"><img src="fest 5.jfif" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="specials">
+                <a href="https://www.mematgo.com/"> <img src="fest 7.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="specials">
+                <a href="https://www.mematgo.com/"> <img src="fest6.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="specials">
+                <a href="https://www.mematgo.com/"><img src="fest 8.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+    </div>
+    <div class="tag">
+        <h2>Online Gifts Top Categories</h2>
+    </div>
+    <div class="row row-cols-2 row-cols-md-4 g-2 box">
+
+        <div class="col ">
+            <div class="gift ">
+               <a href="https://www.mematgo.com/"> <img src="kids_gift.jpg" class="card-img-top  " alt="..."></a>
+
+            </div>
+        </div>
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="macbook-pro-with-box-scaled.jpg" class="card-img-top " alt="..."></a>
+
+                
+            </div>
+        </div>
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="perfume.jfif" class="card-img-top" alt="..."></a>
+
+               
+                
+            </div>
+        </div>
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="OIP.jfif" alt="..."></a> 
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-2 row-cols-md-4 g-2 box">
+
+        <div class="col ">
+            <div class="gift">
+               <a href="https://www.mematgo.com/"> <img src="kids_gift.jpg" class="card-img-top " alt="..."></a>   
+            </div>
+        </div>
+
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="perfume.jfif" class="card-img-top" alt="..."></a>
+                </div>
+            </div>
+       
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="OIP.jfif" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+
+        <div class="col ">
+            <div class="gift">
+                <a href="https://www.mematgo.com/"><img src="c1.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="tag">
+        <h2>Customized Notebooks</h2>
+    </div>
+   <!-- As a heading -->
+   <div class="row row-cols-2 row-cols-md-4 g-2 box">
+
+    <div class="col ">
+        <div class="notebooks">
+           <a href="https://www.mematgo.com/"> <img src="note1.jfif" class="card-img-top " alt="..."></a>   
+        </div>
+    </div>
+    <div class="col ">
+        <div class="notebooks">
+            <a href="https://www.mematgo.com/"><img src="note2.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+   
+    <div class="col ">
+        <div class="notebooks">
+            <a href="https://www.mematgo.com/"><img src="note3.jpg" class="card-img-top" alt="..."></a>
+        </div>
+    </div>
+    <div class="col ">
+        <div class="notebooks">
+            <a href="https://www.mematgo.com/"><img src="note4.jfif" class="card-img-top" alt="..."></a>
+        </div>
+    </div>
+    </div>
+</div>
+    <div class="row row-cols-2 row-cols-md-4 g-2  box">
+
+        <div class="col">
+            <div class="notebooks">
+                <a href="https://www.mematgo.com/"><img src="note2.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="notebooks">
+                <a href="https://www.mematgo.com/"><img src="note1.jfif" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="notebooks">
+                <a href="https://www.mematgo.com/"><img src="note2.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="notebooks">
+                <a href="https://www.mematgo.com/"><img src="note3.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="tag">
+        <h2> Top category Jewellery</h2>
+    </div>
+
+
+    <div class="row row-cols-2 row-cols-md-4 g-3  box">
+
+        <div class="col ">
+            <div class="wears">
+                <a href="https://www.mematgo.com/"><img src="jew1.jfif" class="card-img-top " alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wears">
+                <a href="https://www.mematgo.com/"><img src="jew3.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wears">
+                <a href="https://www.mematgo.com/"><img src="jew4.jfif" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wears">
+                <a href="https://www.mematgo.com/"><img src="jew5.jfif" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-2 row-cols-md-4 g-2  box">
+
+        <div class="col">
+            <div class="wears">
+                <a href="https://www.mematgo.com/"><img src="jew6.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wears">
+                <a href="https://www.mematgo.com/"><img src="jew7.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wears">
+                <a href="https://www.mematgo.com/"><img src="jew2.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wears">
+                <a href="https://www.mematgo.com/"><img src="jew6.jpg" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+    </div>
+    
+   
+    <div class="contact">
+        <div class="contact_card"> 
+
+        <h3 class="head hove">FREE SHIPPING  <i class='fa fa-github green-color'></i> </h3>
+        <p>  Free shipping across India on selected products or order above Rs 2000.</p>
+        </div>
+        <div class="contact_card "> <h3 class="head hove">SUPPORT 24/7</h3>
+            <p>  Contact us 24 hours a day, 7 days a week</p></div>
+            <div class="contact_card "> <h3 class="head hove">7 DAYS RETURN</h3>
+            <p>  flexible return for an exchange.</p></div>
+            <div class="contact_card"> <h3 class="head hove">100% PAYMENT SECURE</h3>
+            <p>  We ensure secure payment with ccavenue.</p></div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="card h-100 border2 c c2">
+                  <h5 class="card-text text text2">  Delhi,India </h5>
+                  <h5 class="card-text text text2 hov"> order@mematgo.com</h5>
+                  <h5 class="card-text text text2 hov"> +91 9-715-714-714</h5>
+                </div>
+              </div>
+            <div class="col ">
+              <div class="card h-100 border2 c">
+                  <h4 class="card-title text1">  Quick Link</h4>
+                  <p class="card-text text " ><a class="hov" href="https://www.mematgo.com/pages/customize-notebooks">   Customize Notebooks</p></a>
+                  <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/pages/customize-designer-t-shirts">   Designer T-shirts</p></a>
+                  <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/pages/customize-mobile-cover">   Mobile Covers</p></a>
+                  <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/pages/customize-jewellery">   Jewellery</p></a>
+                  <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/pages/customize-designer-t-shirts">   Plain T-Shirt</p></a>
+                  <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/pages/customize-designer-t-shirts">   Polo T-Shirt</p></a>
+                  <p class="card-text text "> <a class="hov"href="https://www.mematgo.com/pages/customize-mobile-cover">  Customize Products</p></a>
+                  <p class="card-text text "> <a class="hov"href="https://www.mematgo.com/pages/customize-jewellery">   Corporate Gifts</p></a>
+                </div>
+              </div>
+            
+            <div class="col">
+                <div class="card h-100 border2 c">
+                    <h4 class="card-title text1">  Categories</h4>
+                    <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/pages/customize-notebooks"> Customize Notebooks</p></a>
+                    <p class="card-text text "><a class="hov" href="https://www.mematgo.com/pages/customize-designer-t-shirts">   Designer T-shirts</p></a>
+                    <p class="card-text text ">  <a class="hov" href="https://www.mematgo.com/pages/customize-designer-t-shirts">   Plain T-shirts</p></a>
+                    <p class="card-text text ">  <a class="hov" href="https://www.mematgo.com/pages/customize-designer-mobile-covers">   Mobile Covers</p></a>
+                    <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/pages/customize-jewellery">     Jewellery</p></a>
+                    <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/collections/deals">   Deals</p></a>
+                    <p class="card-text text ">  <a class="hov" href="https://www.mematgo.com/collections/mouse-pad">  Mouse Pad</p></a>
+                    <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/collections/packaging-boxes">   Packaging Boxes</p></a>
+                  </div>
+                 
+                </div>
+            <div class="col">
+              <div class="card h-100 border2 c">
+                  <h4 class="card-title text1">  Useful links</h4>
+                  <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/pages/contact"> Contact Information</p></a>
+                  <p class="card-text text ">  <a class="hov" href="https://www.mematgo.com/policies/privacy-policy"> Privacy Policy</p></a>
+                  <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/policies/refund-policy"> Refund Policy</p></a>
+                  <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/policies/shipping-policy">Shipping Policy</p></a>
+                  <p class="card-text text "> <a class="hov" href="https://www.mematgo.com/policies/terms-of-service">Terms of Service</p></a>
+                </div>
+               
+              </div>
+           
+            <div class="col">
+              <div class="card h-100 border2 c">
+                <h4 class="card-title text1">  Newsletter Signup</h4>
+                <p class="card-text text">  Subscribe to our newsletter and get 10% off your first purchase</p>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 hov" type="search" placeholder=" Type Email id" aria-label="Search">
+                  </form>   
+              </div>
+            </div>
+           
+            </div>     
+       
+    </footer>
+    <div class="copyright">
+     <p class="copyright_text">Copyright © 2023 Memat Go Pvt. Ltd. all rights reserved @Nitish kumar</p>
+    </div>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>

@@ -1,0 +1,760 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.2rem;
+  color: #3e3d3d;
+}
+ul {
+  list-style: none;
+}
+
+li{
+  color: #2b8fc2;
+}
+.pankaj{
+  color: white;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fcfcfc;
+}
+
+
+header{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: calc(5rem + 1rem);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item text{
+    height: calc(2.5rem + 1 rem);
+    background: #88d5ff;
+    color: #ffffff;
+   /* background-filter:blur(20px);*/
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+::-webkit-scrollbar{
+    width: 11px;
+    background:var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb{
+    width: 100%;
+    background: var(--scroll-thumb-color);
+    border-radius: 2em;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+
+.nav-item text{
+  color:  yellow;
+}
+
+.pankaj:hover{
+  color:  yellow;
+}
+.hero{
+  width: 100%;
+  height:80%;
+  margin-inline:auto;
+}
+/*carousel*/
+.carosuel_inner{
+  width:100%;
+  overflow:hidden;
+}
+
+.carousel_inner::after{
+  display:block;
+  content: "See more";
+  clear: both;
+}
+
+.carousel_item{
+position: relative;
+  float:left;
+  display: none;
+  width: 100%;
+  margin-right: -100%;
+}
+
+/*slider*/
+
+.carousel_item_pos_next{
+  display: block;
+}
+
+.carousel_item_pos_next{
+  left: 100%;
+}
+
+
+.carousel_item_next{
+  transform: translateX(-100%);
+  transition: transform .5s ease-in-out;
+}
+.carousel_img{
+  display: block;
+  width: 100%;
+
+}
+.gift-item {
+    margin: auto;
+    height: 100vh;
+  }
+
+  .gift-item img{
+    margin: auto;
+    max-height: 90%;
+  }
+  
+  .gift-item__content {
+    display: flex;
+  }
+  
+  .gift-item__text {
+    margin-top: 10rem;
+    max-width: 50rem;
+  }
+  
+  .gift-item__title {
+    font-size: 4.6rem;
+  }
+  
+  .gift-item__description {
+    font-size: 1.8rem;
+    margin: 2.5rem 0 5rem;
+    color: #263238;
+  }
+  
+  .btn__gift-item {
+    border: 1px solid #66BB6A;
+    color: #ffffff;
+    font-size: 1.8rem;
+    box-shadow: 1px 10px 30px -10px #66bb6a;
+    /*
+      Button hover effect resource
+      https://codepen.io/alticreation/pen/zBZwOP
+      */
+    display: inline-block;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .btn__gift-item:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #66BB6A;
+    z-index: -2;
+  }
+  
+  .btn__gift-item:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: all .3s;
+    z-index: -1;
+  }
+  
+  .btn__gift-item:hover {
+    color: #66BB6A;
+  }
+  
+  .btn__gift-item:hover:before {
+    width: 100%;
+  }
+  
+  .gift-item__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .gift-item__img img {
+    max-height: 100vh;
+    width: initial;
+  }
+  
+  /*End gift-item */
+  /*specials*/
+  .specials {
+    position: relative;
+  }
+  
+.container {
+  width: 100%;
+  padding: 0 1.5rem;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.w-120 {
+  max-width: 120rem;
+}
+
+.w-105 {
+  max-width: 105rem;
+}
+
+.btn {
+  border-radius: .5rem;
+  padding: 1.2rem;
+}
+
+/*Header */
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header__nav {
+  padding: 2rem 1.5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  flex: 2;
+}
+
+.header__logo img {
+  max-width: 12rem;
+}
+
+.header__nav__content {
+  flex: 8;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav__content.open {
+  transform: translateX(0);
+}
+
+.header__menu {
+  flex: 4;
+  display: flex;
+  grid-gap: 2.5rem;
+}
+
+.menu__link {
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.menu__link:hover {
+  color: #66BB6A;
+}
+
+.menu__link.active {
+  color: #66BB6A;
+  font-weight: bold;
+}
+
+.header__signup {
+  flex: 4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn__signup {
+  border: 1px solid #ffffff;
+  font-size: 1.6rem;
+  color: #ffffff;
+  /*
+    Button hover effect resource
+    https://codepen.io/alticreation/pen/zBZwOP
+    */
+  display: inline-block;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn__signup:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -2;
+}
+
+.btn__signup:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #66BB6A;
+  transition: all .3s;
+  z-index: -1;
+}
+
+.btn__signup:hover {
+  color: #ffffff;
+}
+
+.btn__signup:hover:before {
+  width: 100%;
+}
+
+.hamburger-menu-wrap {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+.hamburger-menu {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  grid-row-gap: .2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+.hamburger-menu .line {
+  background-color: #66BB6A;
+  height: .3rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.nav-close-icon {
+  position: relative;
+  padding: 3rem 2rem;
+  height: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-close-icon:before, .nav-close-icon:after {
+  position: absolute;
+  content: '';
+  width: 4px;
+  right: 4rem;
+  height: 40%;
+  background-color: #ffffff;
+}
+
+.nav-close-icon:before {
+  transform: rotateZ(45deg) translate(0.5rem, -1rem);
+}
+
+.nav-close-icon:after {
+  transform: rotateZ(-45deg) translate(1rem, 0.5rem);
+}
+
+/*End Header */
+/*End gift-item */
+.gift-item {
+  margin: auto;
+  height: 100vh;
+}
+
+.gift-item__content {
+  display: flex;
+}
+
+.gift-item__text {
+  margin-top: 10rem;
+  max-width: 50rem;
+}
+
+.gift-item__title {
+  font-size: 4.6rem;
+}
+
+.gift-item__description {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 5rem;
+  color: #263238;
+}
+
+.btn__gift-item {
+  border: 1px solid #66BB6A;
+  color: #ffffff;
+  font-size: 1.8rem;
+  box-shadow: 1px 10px 30px -10px #66bb6a;
+  /*
+    Button hover effect resource
+    https://codepen.io/alticreation/pen/zBZwOP
+    */
+  display: inline-block;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn__gift-item:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #66BB6A;
+  z-index: -2;
+}
+
+.btn__gift-item:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: all .3s;
+  z-index: -1;
+}
+
+.btn__gift-item:hover {
+  color: #66BB6A;
+}
+
+.btn__gift-item:hover:before {
+  width: 100%;
+}
+
+.gift-item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.gift-item__img img {
+  max-height: 100vh;
+  width: initial;
+}
+
+/*End gift-item */
+/*specials*/
+.specials {
+  position: relative;
+}
+
+.specials__img {
+  position: absolute;
+  left: -1.5rem;
+  top: -16rem;
+  z-index: -1;
+}
+
+.specials__img img {
+  max-height: 55rem;
+  max-width: 16rem;
+}
+
+.specials__content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #f7f7f7;
+  margin-bottom: 4rem;
+}
+
+.specials__head {
+  text-align: center;
+  max-width: 70rem;
+  margin: 0 auto 10rem;
+}
+
+.specials__title {
+  font-size: 3.6rem;
+  color: #000000;
+}
+
+.specials__description {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #263238;
+}
+
+.specials__body {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 2.5rem;
+  align-self: baseline;
+}
+
+.opportunity {
+  width: 30%;
+  background-color: #ffffff;
+  border-radius: .5rem;
+  filter: drop-shadow(0 0 0.75rem rgba(27, 31, 35, 0.15));
+  padding: 5rem 2.5rem 2.5rem;
+  transition: all 0.3s ease-out;
+}
+
+.opportunity.active {
+  background-color: #66BB6A;
+}
+
+.opportunity.active .opportunity__title,
+.opportunity.active .opportunity__description {
+  color: #ffffff;
+}
+
+.opportunity:hover {
+  transform: translateY(-2rem);
+}
+
+.opportunity__icon {
+  max-height: 5.6rem;
+  width: initial;
+}
+
+.opportunity__title {
+  font-size: 1.8rem;
+  color: #263238;
+  margin: 2.5rem 0;
+}
+
+.opportunity__description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #263238;
+}
+
+/*End specials*/
+
+/*End How Is Works*/
+.footer {
+  background: url("../img/how-is-works-bg.png") no-repeat;
+  background-color: #66BB6A;
+  margin: auto;
+}
+
+.footer__bottom__content {
+  max-width: 70rem;
+  margin: auto;
+  color: #ffffff;
+  padding: 0 1.5rem;
+}
+
+.footer__contact {
+  text-align: center;
+}
+
+.footer_nav__menu {
+  font-size: 3.6rem;
+}
+
+.footer__description {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.footer__body {
+  margin: 5rem 0 10rem;
+}
+
+
+@keyframes footerStepAnimate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.works__footer {
+  display: flex;
+  overflow: hidden;
+}
+
+.works__step__content {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  grid-gap: 2.5rem;
+  transition: .5s all linear;
+  padding: 3rem;
+  position: relative;
+  align-items: center;
+}
+ 
+@keyframes progressBarStepAnimate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  @media screen and (max-width: 360px) {
+
+    .gift-item__img {
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
+  }  
+/*Footer*/
+.footer {
+  position: relative;
+  margin:initial;
+  grid-gap:2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+.footer .text{
+  position: relative;
+  max-width: 60%;
+
+}
+.footer_nav__menu {
+  flex-basis: 25%;
+}
+
+.footer_nav__item {
+  padding: 1rem 2.5rem;
+}
+
+.footer_nav__menu__title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.footer_nav__link {
+  font-size: 1.6rem;
+  color: #607D8B;
+  transition: 0.2s all;
+}
+
+.footer_nav__link:hover {
+  color: #66BB6A;
+}
+
+.footer__contact {
+  flex: 1 0 28rem;
+  background-color: #66BB6A;
+  padding: 5rem 5rem 10rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__contact > * {
+  max-width: 16rem;
+}
+
+.footer__contact__title {
+  margin-bottom: 1.5rem;
+}
+
+
+.footer__bottom__content {
+  margin-top: 5rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 5rem auto 0;
+  padding-bottom: 10rem;
+}
+
+.copyright {
+  color: #607D8B;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.footer_img {
+  position: absolute;
+  bottom: 0;
+  right: -1.5rem;
+  max-width: 50rem;
+}
+
+/*End Footer*/
+
