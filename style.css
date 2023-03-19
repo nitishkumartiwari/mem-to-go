@@ -160,12 +160,12 @@ position: relative;
 
 }
 .gift-item {
-    margin: auto;
+    margin: 96px;
     height: 100vh;
   }
 
   .gift-item img{
-    margin: auto;
+    margin: 70%;
     max-height: 90%;
   }
   
